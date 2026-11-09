@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="20dp"
+    android:background="@drawable/bg_card">
+
+    <!-- Header -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:layout_marginBottom="12dp">
+
+        <View
+            android:layout_width="10dp"
+            android:layout_height="10dp"
+            android:background="@drawable/green_dot"
+            android:layout_marginEnd="8dp" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="CALL REPORT"
+            android:textStyle="bold"
+            android:textSize="14sp"
+            android:textColor="#333333"
+            android:letterSpacing="0.05" />
+
+        <TextView
+            android:id="@+id/tvTimer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="5s"
+            android:textSize="13sp"
+            android:textColor="#888888" />
+    </LinearLayout>
+
+    <!-- Name & Number -->
+    <TextView
+        android:id="@+id/tvName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Rahul Sharma"
+        android:textSize="22sp"
+        android:textStyle="bold"
+        android:textColor="#111111"
+        android:layout_marginBottom="2dp" />
+
+    <TextView
+        android:id="@+id/tvNumber"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="+91 98765 43210"
+        android:textSize="15sp"
+        android:textColor="#555555"
+        android:layout_marginBottom="16dp" />
+
+    <!-- Divider -->
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#EEEEEE"
+        android:layout_marginBottom="12dp" />
+
+    <!-- Today -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginBottom="8dp">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="TODAY"
+            android:textSize="12sp"
+            android:textColor="#888888"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tvToday"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="12 min 40 sec (3 calls)"
+            android:textSize="13sp"
+            android:textColor="#333333" />
+    </LinearLayout>
+
+    <!-- Last Call -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginBottom="4dp">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="LAST CALL"
+            android:textSize="12sp"
+            android:textColor="#888888"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tvLastCall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Incoming · 4 min 12 sec"
+            android:textSize="13sp"
+            android:textColor="#2E7D32" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tvLastCallDate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Nov 3, 2026"
+        android:textSize="12sp"
+        android:textColor="#888888"
+        android:gravity="end"
+        android:layout_marginBottom="16dp" />
+
+    <!-- Banner Ad Placeholder -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:background="#1A237E"
+        android:gravity="center_vertical"
+        android:paddingStart="12dp"
+        android:paddingEnd="12dp"
+        android:layout_marginBottom="16dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="AD"
+            android:textColor="#FFFFFF"
+            android:textSize="11sp"
+            android:textStyle="bold"
+            android:background="#3949AB"
+            android:paddingHorizontal="6dp"
+            android:paddingVertical="2dp"
+            android:layout_marginEnd="10dp" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="FastRecharge Deals"
+            android:textColor="#FFFFFF"
+            android:textSize="14sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Visit →"
+            android:textColor="#FFFFFF"
+            android:textSize="13sp" />
+    </LinearLayout>
+
+    <!-- Buttons -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btnClose"
+            android:layout_width="0dp"
+            android:layout_height="48dp"
+            android:layout_weight="1"
+            android:text="Close"
+            android:textColor="#333333"
+            android:backgroundTint="#EEEEEE"
+            android:layout_marginEnd="8dp" />
+
+        <Button
+            android:id="@+id/btnCallback"
+            android:layout_width="0dp"
+            android:layout_height="48dp"
+            android:layout_weight="1"
+            android:text="Callback"
+            android:textColor="#FFFFFF"
+            android:backgroundTint="#2E7D32" />
+    </LinearLayout>
+
+</LinearLayout>

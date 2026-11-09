@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="24dp"
+    android:gravity="center_horizontal">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Call Report"
+        android:textSize="28sp"
+        android:textStyle="bold"
+        android:layout_marginTop="48dp"
+        android:layout_marginBottom="16dp" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="This app shows a Call Report screen after a call ends.\n\nSteps:\n1. Grant Permissions\n2. Set as Caller ID & spam app"
+        android:textSize="15sp"
+        android:layout_marginBottom="24dp" />
+
+    <TextView
+        android:id="@+id/statusText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#F0F0F0"
+        android:padding="16dp"
+        android:textSize="14sp"
+        android:layout_marginBottom="32dp" />
+
+    <Button
+        android:id="@+id/btnRequestPermissions"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="1. Grant Permissions"
+        android:layout_marginBottom="12dp" />
+
+    <Button
+        android:id="@+id/btnRequestRole"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="2. Set as Caller ID &amp; spam app"
+        android:backgroundTint="#2E7D32" />
+
+</LinearLayout>
